@@ -1,0 +1,72 @@
+html, body{
+    padding: 0;
+    margin: 0;
+}
+.ya_budu_delat_eto_dz_chtoby_ne_podvodit_nikogo_u_menya_I_tak_svobodnoe_poseschenie {
+    display: grid;
+    grid-template-columns: repeat(3, 33.33%);
+    grid-template-rows: repeat(3, 33.33%);
+    height: 100%;
+}
+.ya_budu_delat_eto_dz_chtoby_ne_podvodit_nikogo_u_menya_I_tak_svobodnoe_poseschenie div{
+    height: 100%;
+}
+.ze{
+    background: url('imgs/ze.jpg') 50% 50% no-repeat !important;
+    background-size: cover;
+    animation: tilt-shaking 0.25s linear infinite;
+}
+.de{
+    background: url('imgs/de.jpg') 50% 50% no-repeat !important;
+    background-size: cover;
+}
+.not_de{
+    background: url('imgs/not_de.jpg') 50% 50% no-repeat !important;
+    background-size: cover;
+}
+.you_lose, .you_win{
+    position: absolute;
+    display: none;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+    font-size: 150px;
+    text-align: center;
+}
+
+.you_lose {
+    color: red;
+}
+
+.you_win {
+    color: gold;
+}
+
+button {
+    border-radius: 20px;
+    border: 3px solid #000;
+    font-size: 50%;
+}
+
+button:hover {
+    transform: scale(1.2);
+}
+
+button.lose {
+    background: linear-gradient(#f94e4e, rgb(251, 2, 2));
+}
+
+button.win {
+    background: linear-gradient(#f7ee3c, rgb(222, 204, 7));
+}
+
+@keyframes tilt-shaking {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(5deg); }
+  50% { transform: rotate(0eg); }
+  75% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
+} 
